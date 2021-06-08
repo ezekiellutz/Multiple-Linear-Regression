@@ -16,5 +16,12 @@ As mentioend before, the model here uses ordinary least squares regression to pr
 
 OLSR treats the data as a matrix and uses linear algebra to estimate the optimal values for the coefficients. While building a model using OLSR results in a highly repeatable model that is reasonably accurate, it can take a very long time for the CPU of the PC to perform all of the matrix operations required. As a general rule, data sets with 10,000 rows or less are suitable for OLSR. Otherwise an optimization approach, such as a gradient descent model, is more appropriate. 
 
-# 
+# The Data Set
+The data set used to build this model comes from the Natural Resources Canada website (https://www.nrcan.gc.ca/). This website provides .csv files of new vehicle information for a variety of model years. For this model, data collected for 2021 model year vehicles was used. However, the code can be easily modified to analyze data collected for other model years as well.
 
+# Metrics for the Model
+One metric for assessing the accuracy of the model is by examining its coefficient of multiple determination. The coefficient of multiple determination is a decimal number, between 0 and 1, that defines how much of the variability of the response data around its mean the model explains.
+
+In most cases, the higher the coefficient of multiple determination is, the better the model fits the data. This does not necessarily mean that the model will have high out-of-sample accuracy, but it could.
+
+This model has a coefficient of multiple determination of 0.9433. This means that the model can explain 94.33% the variability of the response data around its mean.
