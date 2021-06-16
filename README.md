@@ -25,3 +25,30 @@ One metric for assessing the accuracy of the model is by examining its coefficie
 In most cases, the higher the coefficient of multiple determination is, the better the model fits the data. This does not necessarily mean that the model will have high out-of-sample accuracy, but it could.
 
 This model has a coefficient of multiple determination of 0.9433. This means that the model can explain 94.33% the variability of the response data around its mean.
+
+# Example
+
+To illustrate what the model is capable of, let's use data from the .csv file provided in this repository. For this example, let's use the data for a 2021 Toyota Tacoma (4WD):
+
+          Welcome to PyBOT New Vehicle Emissions Calculator!
+    
+    This calculator uses the ordinary least squares approach for 
+    multiple linear regression modeling to accurately predict the
+    CO2 emissions of newly manufactured vehicles.
+    
+    This PyBOT was created by Ezekiel Lutz
+    
+    
+    To begin, please enter the engine displacement size of the vehicle in liters (L): 3.5
+
+    Please enter the number of cylinders (#): 6
+
+    Please enter the fuel consumption in liters per 100 kilometers (L/100km): 13
+
+
+    Based upon the vehicle data entered, the predicted CO2 emissions for this vehicle are expected to be between 253.70 and 280.41 g/km.
+    
+    
+    Would you like to use the calculator again? (Y/N): 
+    
+The model predicted that the CO2 emissions for this vehicle would be between 253.70 g/km and 280.41 g/km. Looking at the .csv file itself, the vehicle had a measured CO2 emissions of 278.4 g/km. In this case, the measured value fell within the model's predicted range and was successful in predicting the CO2 emissions of the vehicle. 
