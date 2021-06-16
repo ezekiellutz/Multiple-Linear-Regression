@@ -30,7 +30,7 @@ This model has a coefficient of multiple determination of 0.9433. This means tha
 
 To illustrate what the model is capable of, let's use data from the .csv file provided in this repository. For this example, let's use the data for a 2021 Toyota Tacoma (4WD):
 
-          Welcome to PyBOT New Vehicle Emissions Calculator!
+    Welcome to PyBOT New Vehicle Emissions Calculator!
     
     This calculator uses the ordinary least squares approach for 
     multiple linear regression modeling to accurately predict the
