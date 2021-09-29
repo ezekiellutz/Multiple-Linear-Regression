@@ -12,7 +12,7 @@ This python script builds an ordinary least squares multiple linear regression m
 The python code creates a basic user interface using the console that allows the user to calculate multiple vehicles at one time and exit once complete. 
 
 # How the Model Works
-As mentioend before, the model here uses ordinary least squares regression to predict the Co2 emissions of new vehicles. At a high level, ordinary least squares regresson (OLSR) minimizes the sum of the squared residual errors. Given a fitted regression line through the data, the model calculates the distance from each data point to the fitted regression line, squares it, and finds the sum of the squared residual errors. This quantity is what the model minimizes in order to make itself accurate.
+As mentioned before, the model here uses ordinary least squares regression to predict the Co2 emissions of new vehicles. At a high level, ordinary least squares regresson (OLSR) minimizes the sum of the squared residual errors. Given a fitted regression line through the data, the model calculates the distance from each data point to the fitted regression line, squares it, and finds the sum of the squared residual errors. This quantity is what the model minimizes in order to make itself accurate.
 
 OLSR treats the data as a matrix and uses linear algebra to estimate the optimal values for the coefficients. While building a model using OLSR results in a highly repeatable model that is reasonably accurate, it can take a very long time for the CPU of the PC to perform all of the matrix operations required. As a general rule, data sets with 10,000 rows or less are suitable for OLSR. Otherwise an optimization approach, such as a gradient descent model, is more appropriate. 
 
